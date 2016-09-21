@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 0 6 * * *"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob",
+      "path": "outcontainer/data.csv",
+      "connection": "mkeazurefunctions_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
