@@ -23,7 +23,7 @@ namespace QueueMessageGenerator
                 var content = $"Sample Content {counter++}";
                 queueRef.AddMessage(new CloudQueueMessage(content));
                 Console.WriteLine(content);
-                // Thread.Sleep(1000);
+                //Thread.Sleep(1000);
             }
         }
     }
